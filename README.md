@@ -4,7 +4,7 @@
 
 # Tema da Aula
 
-Turma Online 19 - Todas em Tech  | Back-end | Semana 8 | 2022 | Professora X
+Turma Online 19 - Todas em Tech  | Back-end | Semana 8 | 2022 | Professora Manuelly Suzik
 
 ### Instruções
 Antes de começar, vamos organizar nosso setup.
@@ -15,52 +15,64 @@ Antes de começar, vamos organizar nosso setup.
 
 ### Resumo
 O que veremos na aula de hoje?
-* [Tema1](#tema1)
-* [Tema2](#tema2)
-* [Tema3](#tema3)
+- [Tema da Aula](#tema-da-aula)
+    - [Instruções](#instruções)
+    - [Resumo](#resumo)
+  - [Conteúdo](#conteúdo)
+    - [Introdução a API](#introdução-a-api)
+    - [Servidores, Endpoints, Rotas , Status Codes, Métodos HTTP e POSTMAN](#servidores-endpoints-rotas--status-codes-métodos-http-e-postman)
+  - [Introdução a API](#introdução-a-api-1)
+      - [O que é API e para o que serve](#o-que-é-api-e-para-o-que-serve)
+      - [API modernas](#api-modernas)
+    - [Servidores, Endpoints, Rotas , Status Codes, Métodos HTTP e POSTMAN](#servidores-endpoints-rotas--status-codes-métodos-http-e-postman-1)
+      - [Servidores](#servidores)
+      - [Status code](#status-code)
+      - [Rotas e Endpoints](#rotas-e-endpoints)
+      - [HTTP Clients](#http-clients)
+    - [Métodos HTTP: GET + POST](#métodos-http-get--post)
+    - [Exercícios](#exercícios)
+    - [Material da aula](#material-da-aula)
+    - [Links Úteis](#links-úteis)
 
 ## Conteúdo
-### Tema1 
-1. [Tópico 1](#topico1)
-2. [Tópico 2](#topico2)
-### Tema2 
-1. [Tópico 3](#topico3)
-   * [Subtópico 1](#subtopico1)
-   * [Subtópico 2](#subtopico2)
+### Introdução a API 
+1. [O que é API e para o que serve](#api-pra-que-serve)
+2. [API modernas](#api-modernas)
+3. [O que é REST?](#o-que-e-rest)
+### Servidores, Endpoints, Rotas , Status Codes, Métodos HTTP e POSTMAN 
+1. [Servidores](#servidores)
+2. [Status Code](#status-code)
+   * [Client Codes](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status#client_error_responses)
+   * [Server Codes](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status#server_error_responses)
+   * [Success Codes](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status#successful_responses)
+   * [Redirect Codes](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status#redirection_messages)
+3. [Rotas e Endpoints]()
+   * [Diferenças](#diferencas)
+4. [HTTP CLIENTS](#http-clients)
+   * [POSTMAN](https://www.postman.com/)
+   * [INSONMIA](https://insomnia.rest/)
    
-### Tema3
-1. [Tópico 4](#topico4)
 
-### Tema1 
 
-#### Topico1
+## Introdução a API  
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam leo nibh, tempus sed rhoncus et, ultrices vitae orci. Donec erat mauris, laoreet in tortor vel, eleifend suscipit nibh. Mauris pharetra dui quis turpis rutrum blandit. Nunc tempor libero tortor, ac commodo erat porttitor ut. Donec vitae orci arcu. Nunc felis mi, maximus a turpis a, mollis pulvinar enim. Vivamus aliquam ante dui, a blandit massa rutrum et. Etiam hendrerit gravida ultrices. Nunc ante massa, dictum eget justo eget, feugiat tincidunt metus.
+#### O que é API e para o que serve
 
- #### Topico2
-  - Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-  - Donec erat mauris, laoreet in tortor vel
-  - Nunc ante massa, dictum eget justo eget, feugiat tincidunt.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam leo nibh, tempus sed rhoncus et, ultrices vitae orci. Donec erat mauris, laoreet in tortor vel, eleifend suscipit nibh. Mauris pharetra dui quis turpis rutrum blandit.
+#### API modernas
 
-### Tema2
-#### Topico3
-* [Subtópico 1](#subtopico1)
-* [Subtópico 2](#subtopico2)
-<br>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam leo nibh, tempus sed rhoncus et, ultrices vitae orci. Donec erat mauris, laoreet in tortor vel.
-<br>
 
-##### Subtopico1
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam leo nibh, tempus sed rhoncus et, ultrices vitae orci. Donec erat mauris, laoreet in tortor vel.
+### Servidores, Endpoints, Rotas , Status Codes, Métodos HTTP e POSTMAN
+  #### Servidores
+  #### Status code
+  - Client Codes
+  - 
 
-##### Subtopico2
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam leo nibh, tempus sed rhoncus et, ultrices vitae orci. Donec erat mauris, laoreet in tortor vel.
+  #### Rotas e Endpoints
 
-### Tema3
-#### Topico4
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam leo nibh, tempus sed rhoncus et, ultrices vitae orci. Donec erat mauris, laoreet in tortor vel, eleifend suscipit nibh. Mauris pharetra dui quis turpis rutrum blandit. Nunc tempor libero tortor, ac commodo erat porttitor ut. Donec vitae orci arcu. Nunc felis mi, maximus a turpis a, mollis pulvinar enim. Vivamus aliquam ante dui, a blandit massa rutrum et. Etiam hendrerit gravida ultrices.
+  #### HTTP Clients
+   
+### Métodos HTTP: GET + POST
 
 ***
 ### Exercícios 
