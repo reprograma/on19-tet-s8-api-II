@@ -37,7 +37,7 @@ O que veremos na aula de hoje?
 2. [REST e SOAP](#o-que-e-rest)
 ### Servidores, Endpoints, Rotas , Status Codes, Métodos HTTP e POSTMAN 
 1. [Servidores](https://www.controle.net/faq/o-que-sao-servidores)
-    Os servidores é o nome dado para onde as aplicações ficam armazenadas e são executadas. De uma maneira simples, o servidor é um computador que está hospedado em algum lugar do mundo e que pode ser acessado pela internet. Esses servidores são máquinas dedicadas apenas para rodar suas aplicações e o desempenho e memória deles depende da sua necessidade.
+    Os servidores é um conceito dado a onde as aplicações ficam armazenadas e são executadas. De uma maneira simples, o servidor é um computador que está hospedado em algum lugar do mundo e que pode ser acessado pela internet. Esses servidores são máquinas dedicadas apenas para rodar suas aplicações , você pode contratar servidores pelo seu desempenho e armazenamento dependendo da sua necessidade.
 2. [Status Code](#status-code)
    * [Client Codes](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status#client_error_responses)
     4XX - Status codes que começam com 4 indicam que a fonte do erro foi causada pelo cliente. (Ex.: Formulário preenchido com valores inválidos , páginas não encontradas , endereço solicitado não encontrado , falta de autorização...)
