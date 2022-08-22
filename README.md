@@ -48,8 +48,7 @@ O que veremos na aula de hoje?
    * [Redirect Codes](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status#redirection_messages)
     3XX - Normalmente não são muito utilizados no modelo REST mas esses status codes avisam se sua requisição de origem foi redirecionada para outro endereço.
 3. [Rotas e Endpoints]()
-     - As rotas são endereços de acessos à recursos da API , por exemplo: Se, dentro de uma API que registra produtos, eu quero listar todos os produtos utilizo a ROTA : "https://<baseURL da api>/produtos", já o endpoint ele suporta mais informações como por exemplo filtros de busca.
-        Para melhor ficar exemplificado vá até o google e perceba que na página inicial o endereço é apenas `https://www.google.com/` se clicarmos para buscar algo podemos observar que o endereço muda, ele terá esse formato: `https://www.google.com/search? ...` /search é o recurso que estamos acessando do google ( no caso a busca ) o que vem depois do `?` são dados para refinar o resultado de sua busca no google. Essa URL completa com os refinamentos damos o nome de endpoint.
+     - As rotas são endereços de acessos à recursos da API , por exemplo: vá até o google e perceba que na página inicial o endereço é apenas `https://www.google.com/` mas se clicarmos para buscar algo o endereço muda, ele terá esse formato: `https://www.google.com/search? ...` o **/search** é o recurso que estamos acessando do google ( no caso a busca ) e o que vem depois do `?` são dados para refinar o resultado de sua busca no google. Essa URL completa com os refinamentos damos o nome de endpoint.
 4. [HTTP CLIENTS](#http-clients)
    * [POSTMAN](https://www.postman.com/)
    * [INSONMIA](https://insomnia.rest/)
