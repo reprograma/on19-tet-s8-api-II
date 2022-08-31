@@ -1,0 +1,12 @@
+{
+  "name": "atividades-sala",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "repository": "https://github.com/reprograma/on19-tet-s8-api-II.git/exercicios/para-sala",
+  "author": "Manuelly Suzik",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}

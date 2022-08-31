@@ -1,0 +1,20 @@
+[
+  {
+    "id": "uuid1",
+    "nome": "nao quero esse também",
+    "diretor": "não sei",
+    "studio": "PIXAR"
+  },
+  {
+    "id": "uuid2",
+    "nome": "quero esse",
+    "diretor": "não sei",
+    "studio": "PIXAR"
+  },
+  {
+    "id": "uuid3",
+    "nome": "nao quero esse",
+    "diretor": "não sei",
+    "studio": "PIXAR"
+  }
+]
