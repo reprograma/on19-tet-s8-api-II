@@ -65,9 +65,10 @@ O que veremos na aula de hoje?
 
 ### Exercícios
 
-- [Listar items de um carrinho](/exercicios/para-casa/)
-- [Criar Item no carrinho](/exercicios/para-casa/)
-- [Listar Item desejado no carrinho](/exercicios/para-casa/)
+- [Listar todos os produtos](/exercicios/para-casa/)
+- [Criar um produto novo e adicionar a lista](/exercicios/para-casa/)
+- [Listar o produto por ID](/exercicios/para-casa/)
+- [Criar um filtro para listar produtos por nome e valor](/exercicios/para-casa/)
 
 ### Material da aula
 
