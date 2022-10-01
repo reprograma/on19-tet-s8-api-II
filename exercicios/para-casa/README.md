@@ -11,7 +11,7 @@ O modelo dos produtos está em `/exercicios/para-casa/model/produtos.json`
 - [ ] expor uma rota GET que recebe o ID de um produto e retorna apenas esse produto na lista de produtos
 - [ ] criar uma rota GET que lista TODOS os produtos da lista de produtos.
 - [ ] Adicionar um novo item à lista de produtos e retorna a lista atualizada
-- [ ] Utilizar o recurso `req.params.query` para criar filtros ( ex.: buscar por nome do produto, valor... ) - * Os filtros ficam a seu critério mas espero que exista ao menos dois filtros para sua rota * 
+- [ ] Utilizar o recurso `req.query` para criar filtros ( ex.: buscar por nome do produto, valor... ) - * Os filtros ficam a seu critério mas espero que exista ao menos dois filtros para sua rota * 
 ---
 
 Terminou o exercício? Dá uma olhada nessa checklist e confere se tá tudo certinho, combinado?!
