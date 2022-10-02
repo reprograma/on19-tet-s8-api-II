@@ -1,0 +1,24 @@
+{
+  "name": "api-restful",
+  "version": "1.0.0",
+  "description": "Projeto de criação de API RESTFUL com Express para listar os produtos de um ecommerce",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Restful",
+    "API",
+    "Node.Js",
+    "Express"
+  ],
+  "author": "Elisângela Manuel",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
