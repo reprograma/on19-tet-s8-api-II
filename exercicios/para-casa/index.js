@@ -7,7 +7,7 @@ const listaDeProdutos = require("./model/produtos.json")
 app.use(express.json())
 
 app.get("/produtos",(req,res)=>{
-    res.json(listaDeProdutos)// para ver todos os produtos http://localhost:3030/produtos/
+    res.json(listaDeProdutos)// para ver todos os produtos http://localhost:3030/produtos
 })
 
 app.get("/produtos/filtro",(req,res)=>{
