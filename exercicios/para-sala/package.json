@@ -1,0 +1,17 @@
+{
+  "name": "exercicio-para-sala",
+  "version": "1.0.0",
+  "description": "O que vamos aprender hoje:\r  - [ ] Criar uma API em NODEJS usando o framework EXPRESS\r  - [ ] Criar uma rota que retorna uma lista com todos os filmes de uma lista\r  - [ ] Criar uma rota que exibe um item por ID\r  - [ ] Criar uma rota que exibe os filmes por filtro de nome ou categoria\r  - [ ] Criar uma rota que adiciona um filme novo a lista de filmes",
+  "main": "index.js",
+  "scripts": {
+    "start" : "nodemon index.js"
+  },
+  "author": "Bianca Trindade",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
