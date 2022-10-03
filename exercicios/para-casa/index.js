@@ -6,7 +6,7 @@ const listaDeProdutos = require("./model/produtos.json")
 
 app.use(express.json())
 
-// para ver todos os produtos http://localhost:3030/produtos/
+/// para ver todos os produtos http://localhost:3030/produtos/
 
 app.get("/produtos/filtro",(req,res)=>{
     const filtraPorNome = req.query.nome?.toLowerCase() //filtra por nome http://localhost:3030/produtos/filtro?nome=air
