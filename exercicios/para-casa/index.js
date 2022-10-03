@@ -12,13 +12,17 @@ app.get('/', (req, res) => {
 app.get("/produtos", (req, res) => {
     const filtrarNome = req.query.nome
     const filtrarDescricao = req.query.descricao
+    const filtrarValor = parseFloat(req.query.valor)
 
     const ProdutoEscolhido = ListaProdutos.filter((item, index) => {
 if(filtrarNome){
     return item.nome.toLocaleLowerCase() === filtrarNome.toLocaleLowerCase()
     }
 if(filtrarDescricao){ 
-    return item.descricao.toLocaleLowerCase()=== filtrarDescricao.toLocaleLowerCase() //o valor ainda nao esta funcionado.
+    return item.descricao.toLocaleLowerCase()=== filtrarDescricao.toLocaleLowerCase()
+}
+if(filtrarValor){ 
+  return item.valor === filtrarValor 
 }
     return item
 })
