@@ -1,13 +1,13 @@
 [{
     "id":1,
-    "nome":"notebook gamer Acer",
-    "descricao":"notebook Acer 8GB de RAM...",
-    "valor":2000.00
+    "nome":"Notebook Gamer Acer",
+    "descricao":"Notebook Acer 16GB de RAM, SSD 1TB, Tela Full HD 8K",
+    "valor":5000.00
     
 },
 {
     "id":2,
-    "nome":"cadeira gamer Thunder",
+    "nome":"Cadeira Gamer Thunder",
     "descricao":"Cadeira Gamer Thunder cor preta",
     "valor":950.00
     
@@ -15,28 +15,28 @@
 {
     "id":3,
     "nome":"Mesa Ultra Grande",
-    "descricao":"Mesa com 1,20m perfeita para seu dia-a-dia",
+    "descricao":"Mesa com 1,50m de cumprimento e 70 cm de profundidade, perfeita para seu dia-a-dia no Home Office",
     "valor":719.00
     
 },
 {
     "id":4,
-    "nome":"Air Fryer daquelas boas",
-    "descricao":"Fritadeira sem óleo das boas",
-    "valor":750.00
+    "nome":"Fritadeira Elétrica - Airfryer High Connect - Philips Walita",
+    "descricao":"Fritadeira sem óleo das boas (sonho de consumo de quem valoriza praticidade na cozinha)",
+    "valor":1799.00
     
 },
 {
     "id":5,
-    "nome":"Um produto que vale a pena comprar",
+    "nome":"Echo Dot (4ª geração): Smart Speaker com Relógio e Alexa - Cor Azul",
     "descricao":"Esse nem precisa de descrição de tão bom",
-    "valor":0.00
+    "valor":474.05
     
 },
 {
     "id":6,
-    "nome":"E um produto que ta caro demais",
+    "nome":"iPad Pro 12,9 polegadas, prateado, 2TB, wi-fi + celular",
     "descricao":"caro demais , não temos dinheiro pra comprar",
-    "valor":10000.00
+    "valor":29999.00
     
 }]
