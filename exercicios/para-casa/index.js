@@ -39,7 +39,7 @@ app.post ("/product/add", (req, res) => {
         res.json (productsList)
     }
     else{
-        res.send ("Produto não adicionado por falta de informação. Verifique as infos necessárias com método GET")
+        res.send ("Produto não adicionado por falta de informação. Verifique as infos necessárias com método GET no mesmo endereço")
     }
 })
 
@@ -85,4 +85,9 @@ app.get ("/product", (req, res) => { //filters
         }
     })
     res.json (productSelected)
+})
+
+app.get ("/help", (req, res) => {
+    const help = `Essa API possui recursos para visualizar todos os produtos disponíveis [/], cada produto por ID [/product/:id], filtros [/product?{name,price,desc}] e filtro de preço para filtrar se deseja mais caro ou mais barato que algum valor (basta inserir '<' ou '>' antes do valor). Também é possível adicionar novos produtos com método POST [/product/add]. Para visualizar o código, basta seguir para: https://github.com/TotallyBabyWolf/on19-tet-s8-api-II`
+    res.json (help)
 })
