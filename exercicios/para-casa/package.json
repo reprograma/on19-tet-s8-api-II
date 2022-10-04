@@ -1,0 +1,15 @@
+{
+  "name": "para-casa",
+  "version": "1.0.0",
+  "description": "## Nome do Exercicio",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "author": "tipopamela",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.1",
+    "nodemon": "^2.0.20"
+  }
+}
