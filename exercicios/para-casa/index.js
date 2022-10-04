@@ -53,7 +53,7 @@ app.get ("/idCount", (req, res) => {
     res.json (globalID)
 })
 
-app.get ("/product", (req, res) => {
+app.get ("/product", (req, res) => { //filters
     const filterName = req.query.name
     const filterPrice = req.query.price
     const filterDesc = req.query.desc
@@ -61,14 +61,11 @@ app.get ("/product", (req, res) => {
     let filterNumber
     if (filterPrice){
         const filterParts = filterPrice.split("")
-        switch (filterPrice[0]){
-            case '<' || '>' :
+        if (filterPrice[0] == '<' || filterPrice[0] == '>'){
                 filterParts.splice(0, 1)
-                break;
         }
-        filterNumber = parseFloat(filterParts.join(""))
+        filterNumber = Number(filterParts.join(""))
     }
-    console.log (filterNumber)
     const productSelected = productsList.filter ((item, index) => {
         if (filterName){
             return item.nome.toLocaleLowerCase().includes(filterName.toLocaleLowerCase())
@@ -77,16 +74,14 @@ app.get ("/product", (req, res) => {
             switch (filterPrice[0]){
                 case '<' :
                     return item.valor <= filterNumber
-                    break;
                 case '>' :
                     return item.valor >= filterNumber
-                    break;
                 default:
                     return item.valor == filterNumber
             }
         }
         if (filterDesc){
-
+            return item.nome.toLocaleLowerCase().includes(filterDesc.toLocaleLowerCase())
         }
     })
     res.json (productSelected)
