@@ -1,50 +1,56 @@
-const express = require("express")
+const express = require ("express")
 const app = express()
-const port = 3000
-const listaDeFilmes = require("./model/filmes-lista.json")
+const port = 7777
 
-app.use(express.json())
+const moviesList = require ("./model/filmes-lista.json")
 
-app.get("/", (req, res) => {
-    res.send("Hello World")
+app.use (express.json())
+
+app.get ("/", (request, response) => {
+    response.send ('Hello World')
 })
 
 
-// == igual |||  "1" == 1
-// === identico 
-app.get("/filmes", (req, res) => {
-    const filtroNome = req.query.nome
-    const filtroAno = req.query.ano
+// ordem dos .get importa pra caralho, tipo, pra caralho
+// mesmo nome pro mesmo comando .get ou .post da merda
+//pode mesmo nome para UMA .post e UMA .get, mas não duas .post ou duas .get
 
-    const filmeEscolhido = listaDeFilmes.filter((item, index) => {
-        if(filtroNome) {
-            return item.Title.toLowerCase() === filtroNome.toLocaleLowerCase()
+app.get ("/movies", (req, res) => {
+    const filterName = req.query.name
+    const filterYear = req.query.year
+
+    const filmeEscolhido = moviesList.filter ((item, index) => {
+        if (filterName){
+            return item.Title.toLocaleLowerCase() === filterName.toLocaleLowerCase()
         }
-        if(filtroAno) {
-            return item.Year === filtroAno
+        if (filterYear){
+            return item.Year.toLocaleLowerCase() === filterYear.toLocaleLowerCase()
         }
         return item
     })
     res.json(filmeEscolhido)
 })
 
-app.get("/filmes/:id", (req, res) => {
-    const id = req.params.id // Retorna uma string
+app.get ("/movies/:id", (req, res) => {
+    const id = req.params.id
+//                  ^ pegar parametro que vem no lugar no :id
+    const selectMovie = moviesList.filter ((item, index) => item.id == id)
 
-    const filmeEscolhido = listaDeFilmes.filter((item, index) => item.id == id)
-
-    res.json(filmeEscolhido)
-
+    res.json (selectMovie)
 })
 
-app.post("/filmes", (req, res) => {
+app.get ("/movies", (req, resp) => {
+    resp.json (moviesList)
+})
+
+app.post ("/", (req, resp) => {
     const body = req.body
 
-    listaDeFilmes.push(body)
+    console.log (body)
 
-    res.json(listaDeFilmes)
+    resp.send("usuario autenticado")
 })
 
-app.listen(port, () => {
-    console.log("Api está escutando na porta 3000")
+app.listen (port, () => {
+    console.log (`API is listening on port ${port}`)
 })
