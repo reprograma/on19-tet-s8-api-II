@@ -6,14 +6,10 @@ const listaDeProdutos = require("./model/produtos.json")
 
 app.use(express.json())
 
-app.get("/produtos",(req,res)=>{
-    res.json(listaDeProdutos)// para ver todos os produtos http://localhost:3030/produtos
-})
-
-app.get("/produtos/filtro",(req,res)=>{
-    const filtraPorNome = req.query.nome?.toLowerCase() //filtra por nome http://localhost:3030/produtos/filtro?nome=air
-    const FiltraPorValor = req.query.valor // filtra por valor http://localhost:3030/produtos/filtro?valor=719
-    const filtraPorDescricao = req.query.descricao?.toLowerCase() //filtra por descrição http://localhost:3030/produtos/filtro?descricao=caro
+app.get("/produtos",(req,res)=>{ // para ver todos os produtos http://localhost:3030/produtos 
+    const filtraPorNome = req.query.nome?.toLowerCase() //filtra por nome http://localhost:3030/produtos?nome=Cadeira
+    const FiltraPorValor = req.query.valor // filtra por valor http://localhost:3030/produtos?valor=2000
+    const filtraPorDescricao = req.query.descricao?.toLowerCase() //filtra por descrição http://localhost:3030/produtos?descricao=caro
     
     const produtoSElecionado = listaDeProdutos.filter((produto,i) => {
         if(filtraPorNome) {
