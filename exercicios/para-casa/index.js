@@ -1,5 +1,4 @@
-const { response } = require("express")//require só funciona para bibliotecas, no caso a biblioteca express
-const express = require("express")
+const express = require("express")//require só funciona para bibliotecas, no caso a biblioteca express
 const app = express()//criando uma função dentro de app
 const port = 3333//declarar um valor qualquer
 const listaDeProdutos = require("./model/produtos.json")
