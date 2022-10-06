@@ -30,6 +30,14 @@ app.get("/produtos", (req, res) => {
         }
         return item
     })
+    res.json(produtoFiltro)
+})
+
+app.post("/produtos", (req, res) => {
+    const body = req.body
+    produtos.push(body)
+    res.json(produtos)
+
 })
 
 
