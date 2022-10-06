@@ -27,7 +27,7 @@ app.get("/filmes", (req, res) => {
 })
 
 app.get("/filmes/:id", (req, res) => {
-    const id = req.params.id
+    const id = req.params.id // retorna uma string
     
     const filmeEscolhido = listaDeFilmes.filter((item, index) => item.id == id)
 

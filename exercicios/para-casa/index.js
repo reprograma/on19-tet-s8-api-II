@@ -7,6 +7,12 @@ const listaDeProdutos = require("./model/produtos.json")
 
 app.use(express.json())
 
+// lista todos os produtos 
+app.get("/produtos", (req, res) => {
+    res.json(listaDeProdutos)
+})
+
+// lista através dos filtros escolhidos
 app.get("/produtos", (req, res) => {
     const filtroId = req.query.id
     const filtroNome = req.query.nome
@@ -23,7 +29,8 @@ app.get("/produtos", (req, res) => {
     res.json(produtoEscolhido)
 })
 
-app.get("/produtos/preco", (req, res) => { // lista os preços do mais barato até o mais caro
+// lista os preços do mais barato até o mais caro
+app.get("/produtos/preco", (req, res) => { 
     
     listaDeProdutos.sort((prod1, prod2) =>  {
         return prod1.valor < prod2.valor ? -1 : prod1.valor > prod2.valor ? 1 : 0;
@@ -31,6 +38,7 @@ app.get("/produtos/preco", (req, res) => { // lista os preços do mais barato at
     res.json(listaDeProdutos)
 })
 
+// adiciona novos itens a lista de produtos
 app.post("/produtos", (req, res) => {
     const body = req.body
 
@@ -39,6 +47,7 @@ app.post("/produtos", (req, res) => {
     res.json(listaDeProdutos)
 })
 
+// lista produtos por id
 app.get("/produtos/:id", (req, res) => {
     const id = req.params.id
 
