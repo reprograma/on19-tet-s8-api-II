@@ -17,7 +17,7 @@ app.get('/filmes', (req, res) => {
 
   const filmeEscolhido = listaDeFilmes.filter((item, index) => {
     if (filtroNome) {
-      return item.Title.toLowerCase() === filtroNome.toLocaleLowerCase()
+      return item.Title.toLowerCase() === filtroNome.toLowerCase()
     }
     if (filtroAno) {
       return item.Year === filtroAno
