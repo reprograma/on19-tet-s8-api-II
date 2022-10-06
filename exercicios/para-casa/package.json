@@ -1,0 +1,14 @@
+{
+  "name": "para-casa",
+  "version": "1.0.0",
+  "description": "Atividade para casa",
+  "main": "index.js",
+  "scripts": {
+    "start" : "nodemon index.js"
+  },
+  "author": "Mikaela Clotilde",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}
