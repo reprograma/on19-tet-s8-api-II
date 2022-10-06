@@ -43,7 +43,7 @@ app.get('/produtos', (req, res) => {
 
   const filtroProduto = listaProdutos.filter((item, index) => {
     if (nome) {
-      return item.nome.toLowerCase() === nome.toLocaleLowerCase()
+      return item.nome.toLowerCase() === nome.toLowerCase()
     }
     if (valor) {
       return item.valor === valor
