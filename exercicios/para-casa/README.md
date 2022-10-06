@@ -4,14 +4,14 @@
 
 - Explicação do exercício: Utilizando todos os conhecimentos adquiridos na aula, crie uma `API RESTFUL` usando Express que irá listar os produtos de um ecommerce.
 
-O modelo dos produtos está em `/exercicios/para-casa/models/produtos.json`
+O modelo dos produtos está em `/exercicios/para-casa/model/produtos.json`
 
 
  Requisitos do exercício:
 - [ ] expor uma rota GET que recebe o ID de um produto e retorna apenas esse produto na lista de produtos
 - [ ] criar uma rota GET que lista TODOS os produtos da lista de produtos.
-- [ ] Adicionar um novo item à lista de produtos.
-- [ ] Utilizar o recurso `req.params.query` para criar filtros ( ex.: buscar por nome do produto, valor... ) - * Os filtros ficam a seu critério mas espero que exista ao menos dois filtros para sua rota * 
+- [ ] Adicionar um novo item à lista de produtos e retorna a lista atualizada
+- [ ] Utilizar o recurso `req.query` para criar filtros ( ex.: buscar por nome do produto, valor... ) - * Os filtros ficam a seu critério mas espero que exista ao menos dois filtros para sua rota * 
 ---
 
 Terminou o exercício? Dá uma olhada nessa checklist e confere se tá tudo certinho, combinado?!
