@@ -6,12 +6,12 @@ const listaDeProdutos = require("./model/produtos.json")
 app.use(express.json())
 
 app.get("/produto", (req, res) => {
-    const filtroValor = req.query.valor
+    const filtroPreço = req.query.valor
     const filtroId = req.query.id
 
     const produtoSelecionado = listaDeProdutos.filter((item) => {
-        if(filtroValor) {
-            return item.Title.toLowerCase() === filtroValor
+        if(filtroPreço) {
+            return item.Title.toLowerCase() === filtroPreço
         }
         if(filtroId) {
             return item.Year === filtroId
