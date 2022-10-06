@@ -16,10 +16,10 @@ app.get("/produtos", (req, res) => {
 
     const ProdutoEscolhido = ListaProdutos.filter((item, index) => {
 if(filtrarNome){
-    return item.nome.toLocaleLowerCase() === filtrarNome.toLocaleLowerCase()
+    return item.nome.toLowerCase() === filtrarNome.toLowerCase()
     }
 if(filtrarDescricao){ 
-    return item.descricao.toLocaleLowerCase()=== filtrarDescricao.toLocaleLowerCase()
+    return item.descricao.toLowerCase()=== filtrarDescricao.toLowerCase()
 }
 if(filtrarValor){ 
   return item.valor === filtrarValor 
