@@ -1,0 +1,19 @@
+{
+  "name": "on19-tet-s8-api-ii",
+  "version": "1.0.0",
+  "description": "Turma Online 19 - Todas em Tech | Back-end | Semana 8 | 2022 | Professora Manuelly Suzik",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Larileonell/on19-tet-s8-api-II.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Larileonell/on19-tet-s8-api-II/issues"
+  },
+  "homepage": "https://github.com/Larileonell/on19-tet-s8-api-II#readme"
+}
