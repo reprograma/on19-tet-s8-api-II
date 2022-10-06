@@ -21,7 +21,7 @@ app.get("/produtos",(req, res)=>{ // Aqui filtros
         }
         return item
     })
-    res.json(listaDeProdutos)
+    res.json(produtoEscolhido)
 })
 
 app.get("/produtos/:id", (req, res) => { // rota de ID
