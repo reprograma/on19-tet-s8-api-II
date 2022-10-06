@@ -1,7 +1,7 @@
 const express = require("express")
 const app = express()
 const port = 3000
-const produtos = require("../../../../Nova pasta/on19-tet-s8-api-II/exercicios/para-casa/model/produtos.json")
+const produtos = require("./model/produtos.json")
 app.use(express.json())
 
 app.get("/", (req, res) =>{
