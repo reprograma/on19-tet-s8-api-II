@@ -1,0 +1,17 @@
+{
+  "name": "para-casa",
+  "version": "1.0.0",
+  "description": "- Explicação do exercício: Utilizando todos os conhecimentos adquiridos na aula, crie uma `API RESTFUL` usando Express que irá listar os produtos de um ecommerce.",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "author": "Greice",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
