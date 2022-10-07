@@ -1,0 +1,17 @@
+{
+  "name": "exercicio-home",
+  "version": "1.0.0",
+  "description": "exercicio para casa da semana 8",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "author": "Tayane",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
