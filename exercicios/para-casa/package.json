@@ -1,0 +1,22 @@
+{
+  "name": "exercicio-para-casa",
+  "version": "1.0.0",
+  "description": "Construção de uma API simples usando Express",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "api",
+    "express",
+    "javascript"
+  ],
+  "author": "Mellyssa Stephanny",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
