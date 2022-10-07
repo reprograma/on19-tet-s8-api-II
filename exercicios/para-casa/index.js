@@ -17,10 +17,6 @@ for (let idIndex = 0; idIndex < productsList.length; idIndex++){
 app.use (express.json())
 //   ^ precisa dessa parada aqui pra pegar o body ali no POST - product/add
 
-app.get ("/", (req, res) => {
-    res.json (productsList)
-})
-
 app.get ("/product/add", (req, res) => {
     res.json ("Produto necessita apenas de: nome, descricao e valor")
 })
@@ -30,7 +26,7 @@ app.post ("/product/add", (req, res) => {
     const isValidProduct = CheckProduct (add) 
     if (isValidProduct){
         add.id = globalID
-        productsList.push (add)
+        productsList.unshift (add)
         globalID++
         res.json (productsList)
     }
