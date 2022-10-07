@@ -31,16 +31,16 @@ app.post("/produtos", (req, res) => {
 /* Utilizar o recurso `req.query` para criar filtros ( ex.: buscar por nome do produto, valor... ) 
  Os filtros ficam a seu critério mas espero que exista ao menos dois filtros para sua rota */
 app.get("/produtos", (req, res) => {
-  const filtroNome = req.query.nome;
-  const filtroValor = req.query.valor;
+  const filterName = req.query.nome;
+  const filterValue = parseFloat(req.query.valor);
 
   const prodFiltros = listaProd.filter((item) => {
-    if (filtroNome) 
-      return item.nome.toLocaleLowerCase() == filtroNome.toLocaleLowerCase();
-    
-    if (filtroValor) 
-      return item.valor == filtroValor;
-    
+    if (filterName) {
+      return item.nome.toLowerCase().trim() == filterName.toLowerCase().trim();
+    }
+    if (filterValue) {
+      return item.valor == filterValue;
+    }
     return item;
   });
   res.json(prodFiltros);
