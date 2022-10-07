@@ -5,6 +5,7 @@ const port = 7777
 const moviesList = require ("./model/filmes-lista.json")
 
 app.use (express.json())
+//   ^ precisa dessa parada aqui pra pegar o body ali no POST - product/add
 
 app.get ("/", (request, response) => {
     response.send ('Hello World')
