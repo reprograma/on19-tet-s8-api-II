@@ -2,9 +2,6 @@ const express = require ("express")
 const app = express()
 const port = 3000
 app.use(express.json())
-app.listen(port, () => {
-    console.log("API está escutando na porta 3000")
-})
 
 const listaDeProdutos = require("./model/produtos.json")
 
@@ -47,5 +44,9 @@ app.post("/produtos", (req, res) => {
     listaDeProdutos.push(body)
 
     res.json(listaDeProdutos)
+})
+
+app.listen(port, () => {
+    console.log("API está escutando na porta 3000")
 })
 
