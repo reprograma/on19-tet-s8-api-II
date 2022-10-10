@@ -8,9 +8,6 @@ app.get("/", (req, res) =>{
     res.send("Hello World")
 })
 
-app.get("/produtos", (req, res) => {
-    res.json(produtos)
-})
 
 app.get("/produtos/:id", (req, res) => {
     const id = req.params.id
@@ -24,14 +21,14 @@ app.get("/produtos", (req, res) => {
 
     const prodEscolhido = produtos.filter((item, index) => {
         if(filtroNome) {
-            return item.nome === filtroNome
+            return item.nome.toLowerCase() == filtroNome.toLowerCase()
         }
         if(filtroDescricao) {
-            return item.descricao === filtroDescricao
+            return item.descricao.t == filtroDescricao
         }
         return item
     })
-    res.json(produtos)
+    res.json(prodEscolhido)
 })
 
 
