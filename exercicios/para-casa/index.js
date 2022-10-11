@@ -5,6 +5,11 @@ const port = 3000
 
 app.use(express.json())
 
+
+//Formato já com a revisão
+
+//******************************* 
+
 // TODO:[x] expor uma rota GET que recebe o ID de um produto e retorna apenas esse produto na lista de produtos - DONE
 app.get("/produto/:id",(req, res)=>{
     const id = req.params.id
@@ -39,8 +44,53 @@ app.post("/produto",(req, res)=>{
     res.json(listaProdutos)
 })
 
+app.listen(port, () => {
+    console.log(`Example app listening on port ${port}`)
+  })
 
+/* ********************************************** */
 
-app.listen(port,()=>{
-    console.log(`Api is listening on port ${port}`)
+/* Minhas soluções 
+app.get("/produtos%20", (req, res) => {
+  const filtroNome = req.query.nome
+  const filtroValor = parseFloat(req.query.valor)
+
+  const produtoEscolhido = listaProdutos.filter((item, index) => {
+      if(filtroNome) {
+          return item.nome.toLowerCase() === filtroNome.toLocaleLowerCase()
+      }
+      if(filtroValor) {
+          return item.valor === filtroValor
+      }
+      return item
+  })
+  res.json(produtoEscolhido)
 })
+
+
+
+app.get("/produtos", (req,res) =>{
+  res.json(listaProdutos)
+  
+})
+
+app.get("/produtos/:id", (req,res) => {
+   const id = req.params.id
+    const produtoEscolhido = listaProdutos.filter((item, index) => item.id == id)
+
+    res.json(produtoEscolhido)
+
+})
+
+
+app.post("/produtos", (req,res) =>{
+  const body = req.body
+
+ listaProdutos.push(body)
+
+  res.json(listaProdutos)
+})
+
+app.listen(port, () => {
+  console.log(`Example app listening on port ${port}`)
+})*/
