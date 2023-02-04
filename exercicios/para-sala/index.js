@@ -1,17 +1,36 @@
-const express = require("express")
-const app = express()
-const port = 3000
 const listaDeFilmes = require("./model/filmes-lista.json")
 
+const express = require("express")
+const app = express()
+const port = 2022
 app.use(express.json())
 
-app.get("/", (req, res) => {
-    res.send("Hello World")
+//teste 1
+app.get("/", (req, res) => { 
+    res.send("Hello human ! I am E.T Purple")//aparece no terminal do postman
+    
+   })
+
+  //teste 2 
+app.post("/", (req, res)=>{
+    const body= req.body
+    console.log(body)
+    res.send("usuario autenticado")
+    
 })
 
 
-// == igual |||  "1" == 1
-// === identico 
+//listando todos os filmes
+app.get("/filmes", (req, res) => {
+    res.json(listaDeFilmes)
+})
+// Acessando por ID
+app.get("/filmes/:id", (req, res)=> {
+    const  ID = req.params.id
+    const filme_Escolhido = listaDeFilmes.filter((item, index)=> item.id ==ID)
+    res.json(filme_Escolhido)
+})
+//acesando com o ano e o nome do filme
 app.get("/filmes", (req, res) => {
     const filtroNome = req.query.nome
     const filtroAno = req.query.ano
@@ -28,23 +47,25 @@ app.get("/filmes", (req, res) => {
     res.json(filmeEscolhido)
 })
 
-app.get("/filmes/:id", (req, res) => {
-    const id = req.params.id // Retorna uma string
-
-    const filmeEscolhido = listaDeFilmes.filter((item, index) => item.id == id)
-
-    res.json(filmeEscolhido)
-
-})
-
+//funcionou :)
 app.post("/filmes", (req, res) => {
     const body = req.body
 
-    listaDeFilmes.push(body)
+    listaDeFilmes.push(body)//adiciona item no final de uma arrya
 
     res.json(listaDeFilmes)
+
+})
+app.delete("/del/:id", (req, res)=>{
+    const IdFilmes =  req.params.id
+    
+    res.status(500).json(` O filme que posui o id ${IdFilmes} foi deletado com sucesso`)
 })
 
+
 app.listen(port, () => {
-    console.log("Api está escutando na porta 3000")
+    console.log("Porta rodando com sucesso")//aparece no terminal do vscode
 })
+
+
+
